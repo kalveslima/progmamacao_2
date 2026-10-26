@@ -1,11 +1,7 @@
-def tabuada(numero):
-    for i in range(1, 11):
-        resultado = numero * i
-        print(f"{numero} x {i} = {resultado}")
+n = int(input())
 
-
-
-print(tabuada(5))
-
-
-    
+for _ in range(n):
+    palavras = input().split()
+    palavras.sort(key=len)
+    print(' '.join(palavras))
+    #exercicio 3 do segundo trabalho do lucio, os nomes estao incorretos
